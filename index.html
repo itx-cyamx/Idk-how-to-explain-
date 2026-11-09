@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Something From My Heart ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090609;
+  color: #fff;
+  font-family: Georgia, serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.heart {
+  position: fixed;
+  color: #ff5277;
+  opacity: .5;
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10vh) rotate(0); opacity: 0; }
+  20% { opacity: .6; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 70px 22px;
+  text-align: center;
+}
+
+.small {
+  color: #d88a9d;
+  letter-spacing: 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(32px, 8vw, 48px);
+  margin: 25px 0 15px;
+  color: #f7dce3;
+  font-weight: normal;
+}
+
+.intro {
+  color: #b8a6ac;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+button {
+  background: transparent;
+  color: #ffdce5;
+  border: 1px solid #b75c77;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  background: #a52e50;
+  box-shadow: 0 0 25px #a52e5066;
+}
+
+#letter {
+  display: none;
+  text-align: left;
+  margin-top: 45px;
+  padding: 28px 23px;
+  border: 1px solid #5c303e;
+  border-radius: 18px;
+  background: linear-gradient(145deg,#1b1018,#100b10);
+  animation: appear 1.2s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#letter p {
+  color: #e2d2d8;
+  line-height: 1.95;
+  font-size: 16px;
+  margin-bottom: 23px;
+}
+
+.highlight {
+  color: #ff9db7 !important;
+  font-style: italic;
+}
+
+.final {
+  text-align: center;
+  font-size: 19px !important;
+  color: #ffb5c8 !important;
+  padding-top: 15px;
+}
+
+.signature {
+  text-align: right;
+  color: #c17b91;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+footer {
+  color: #765b65;
+  font-size: 12px;
+  margin-top: 55px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" src="tu.mp3" loop preload="auto"></audio>
+
+<div class="container">
+
+  <div class="small">A little piece of my heart</div>
+
+  <h1>For You, Ninu ❤️</h1>
+
+  <p class="intro">
+    There's something I've been wanting to tell you.<br>
+    Maybe I couldn't express it properly in words before.<br>
+    So please, read this once with an open heart.
+  </p>
+
+  <button onclick="openLetter()" id="openBtn">
+    Open My Heart ♡
+  </button>
+
+  <div id="letter">
+
+    <p>
+      There's something I genuinely want to ask you, and I hope you think about it honestly before answering.
+    </p>
+
+    <p>
+      You say that you never had feelings for me, that maybe you never understood love or never felt anything romantic towards me. But then what were all those moments we shared?
+    </p>
+
+    <p>
+      What were those late-night calls that lasted for hours? What about those times when we would wait for each other to be free just so we could talk? What were all those conversations where we shared our thoughts, our problems, our secrets, our happiness, and even the smallest details of our lives?
+    </p>
+
+    <p class="highlight">
+      Were those moments really nothing to you?
+    </p>
+
+    <p>
+      Because for me, they meant something. A lot more than I can explain. I never forced you to spend your time with me. You were there willingly, just as I was. We both made time for each other, we both shared things, and we both became such an important part of each other's daily lives.
+    </p>
+
+    <p>
+      And now, hearing you say that you never had feelings for me makes me question everything. I'm not saying you should pretend to have feelings you don't have, but I genuinely don't understand how someone can share so much of their life with another person and later describe it as if it never meant anything.
+    </p>
+
+    <p>
+      Do you ever think about how your words affect me? How difficult it is for me to accept that someone I imagined my entire future with now wants to call me just a friend?
+    </p>
+
+    <p>
+      I had plans in my heart that I never considered temporary. I imagined you in my future, in my happiness, in my struggles, and in all the little things I wanted to experience in life. I wasn't just passing my time with you. I was emotionally invested in us.
+    </p>
+
+    <p>
+      I still wish things could go back to how they were. I still wish we could find that connection again. But I cannot understand how I'm supposed to suddenly behave like nothing ever happened between us.
+    </p>
+
+    <p>
+      Maybe you see all of this differently, and I cannot change your perspective. But please don't make me feel like I imagined everything alone or that all those moments were meaningless.
+    </p>
+
+    <p>
+      I'm not asking you to love me out of guilt. I'm asking you to acknowledge that there was something meaningful between us, at least from my side, and to understand that your decision has consequences for someone who genuinely cared about you.
+    </p>
+
+    <p class="final">
+      I hurt the most because I didn't just lose someone I loved; I lost the person I shared my days and nights with, the person I trusted with my feelings, and the person I once believed I would spend my entire life with.
+      <br><br>
+      And the hardest part is that I'm still holding on to those memories while you seem ready to call everything just friendship.
+    </p>
+
+    <div class="signature">
+      With a heart that still cares... ❤️
+    </div>
+
+  </div>
+
+  <footer>
+    Some feelings are difficult to explain, even with a thousand words.
+  </footer>
+
+</div>
+
+<script>
+function openLetter() {
+  document.getElementById("letter").style.display = "block";
+  document.getElementById("openBtn").style.display = "none";
+
+  // Start background music
+  const music = document.getElementById("bgMusic");
+  music.play().catch(error => {
+    console.log("Music could not start:", error);
+  });
+
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth"
+  });
+}
+
+// Falling hearts
+for (let i = 0; i < 22; i++) {
+  let heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "♥";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (5 + Math.random() * 8) + "s";
+  heart.style.animationDelay = Math.random() * 8 + "s";
+  heart.style.fontSize = (10 + Math.random() * 17) + "px";
+  document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
+
+
+
